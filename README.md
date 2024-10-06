@@ -51,6 +51,25 @@ Housing: Build more low-density housing to reduce overcrowding and accommodate t
 Schools: With a growing population of young children, increased investment in schools is necessary.
 Elderly Care: With an expected increase in retirees, end-of-life care facilities should be prioritized for future investment.
 
+# Analyzing Second Hand Car Sales Data with Supervised and Unsupervised Learning Models
+**Introduction**
+This project explores predictive models for second-hand car prices using both numerical and categorical features. Multiple regression models (Linear Regression, Random Forest Regressor, and Artificial Neural Networks) are employed, along with k-Means clustering, to evaluate performance in predicting car prices.
+
+**Methodology**
+Dataset: The dataset includes details such as manufacturer, engine size, year of manufacture, mileage, and price.
+Data Preprocessing: Data cleaning involved removing outliers and duplicates. Boxplots and heatmaps were used to explore relationships between features.
+Regression Models
+Single Numerical Features: Year of manufacture was the best predictor with an R² score of 0.77 using polynomial regression.
+Multiple Linear Regression & Random Forest: Random Forest outperformed multiple linear regression with a higher R² score of 0.92 and a lower MSE of 12,167,556.
+Random Forest (Numerical + Categorical): Including categorical features further improved accuracy, achieving an R² score of 0.998 and an MSE of 261,289.62.
+Artificial Neural Networks (ANN): An ANN model was constructed with two hidden layers, achieving the lowest MSE of 4,997.49, outperforming previous models.
+Clustering Models
+k-Means Clustering: Applied to different numerical feature combinations. The best result was obtained using 'Year of manufacture' and 'Mileage' with a silhouette score of 0.62 and a Davies-Bouldin index of 0.51.
+k-Means vs. Hierarchical Clustering: Hierarchical clustering had a slightly higher silhouette score (0.58) but required more clusters (k=3).
+
+**Conclusion**
+Year of manufacture and mileage were the most influential features in predicting car prices. Among models, the ANN performed best, and the inclusion of both numerical and categorical features significantly enhanced prediction accuracy.
+
 
 # Sentiment Analysis on Drug Reviews
 **Introduction**
