@@ -26,6 +26,32 @@ Enhance surveillance in accident-prone cities (e.g., Hull, Scunthorpe) through s
 Strengthen emergency medical services to reduce fatalities by increasing the number of ambulances and reducing response times.
 
 
+# Analysis of Census Data for Town Development
+**Introduction**
+This project analyzes census data to identify trends and insights that inform decisions on what to build and invest in on an empty plot of land. The town is located between two larger cities and relies on its neighboring cities for certain infrastructures. The analysis involves data cleaning, population demographics, birth rates, employment, and other key factors to guide investment recommendations.
+
+**Data Cleaning**
+The dataset includes columns like house number, street, age, occupation, marital status, and gender. Key cleaning steps:
+
+Missing first names were filled with "unknown," and missing surnames were inferred from household data.
+Missing ages were imputed based on occupation.
+Inconsistent occupation entries were cleaned and a new column for "Employment status" was created.
+Religion outliers (e.g., "Jedi") were replaced with placeholders.
+
+**Key Insights**
+Age Distribution: The population is mostly women aged 30-49. A lower number of students compared to young children suggests a declining birth rate and a trend of migration after education.
+Birth Rate: The current birth rate is 156 per 1000 age-bearing women, a decline from 199 per 1000 four years prior, suggesting fewer babies born recently.
+Employment: The unemployment rate is 10% of the working population. The largest unemployed group is aged 35-49.
+Commuters: 77.5% of the population commutes, likely due to a lack of local jobs.
+Overcrowded Housing: 51% of homes are overcrowded, largely due to singles, lodgers, and divorcees living in high-density housing.
+
+**Recommendations**
+Train Station: Due to the high commuter population, building a train station will benefit the town's residents.
+Housing: Build more low-density housing to reduce overcrowding and accommodate the growing population and immigrant inflow.
+Schools: With a growing population of young children, increased investment in schools is necessary.
+Elderly Care: With an expected increase in retirees, end-of-life care facilities should be prioritized for future investment.
+
+
 # Sentiment Analysis on Drug Reviews
 **Introduction**
 This project focuses on using natural language processing (NLP) for sentiment analysis on drug reviews. The aim is to analyze patients’ reviews and classify them into positive, neutral, or negative sentiments. Sentiment analysis in the pharmaceutical industry can provide insights to healthcare professionals and stakeholders to improve patient drug experiences.
