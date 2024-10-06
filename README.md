@@ -76,6 +76,31 @@ k-Means vs. Hierarchical Clustering: Hierarchical clustering had a slightly high
 **Conclusion**
 Year of manufacture and mileage were the most influential features in predicting car prices. Among models, the ANN performed best, and the inclusion of both numerical and categorical features significantly enhanced prediction accuracy.
 
+# Image Recognition to Identify Flower Species Using CNNs
+**Introduction**
+This project applies Convolutional Neural Networks (CNNs) to classify images of flowers into five species daisy, dandelion, rose, sunflower, and tulip. The TensorFlow flowers dataset contains 3670 images, and the CNN is designed to accurately classify these species, despite the variations in color, texture, and background. The goal is to optimize the model using regularization and hyperparameter tuning.
+
+**Dataset and Preprocessing**
+Dataset 3670 images of five flower species.
+Data Splitting 80% training, 20% testing.
+Data Augmentation Applied horizontalvertical shifts, flips, rotation, and zoom to prevent overfitting. Images were normalized to pixel values between 0 and 1.
+
+**Model Architecture**
+The CNN architecture includes
+
+Conv2D layers with small 3x3 filters and ReLU activation.
+MaxPooling layers for spatial invariance.
+Dropout layers to prevent overfitting (0.25 and 0.5).
+Dense layers with softmax for classification.
+Model Training
+Regularization Dropout (0.5) was applied to reduce overfitting.
+Hyperparameter Tuning Learning rate, batch size, and dropout rates were tuned. Optimal hyperparameters were selected after experimenting with multiple combinations.
+Hyperparameter Tuning Results
+Best Results A combination of 10 epochs, 0.001 learning rate, 0.5 dropout, and 128 batch size yielded the highest validation accuracy of 0.8822.
+Overfitting Analysis Training and validation accuracy and loss curves showed no signs of overfitting, confirming that regularization and hyperparameter tuning were effective.
+
+**Conclusion**
+The CNN model effectively identified flower species with high accuracy. Regularization techniques and careful tuning of hyperparameters led to significant improvements in the model’s performance without overfitting. The final validation accuracy achieved was 88.22%.
 
 # Sentiment Analysis on Drug Reviews
 **Introduction**
