@@ -1,5 +1,5 @@
 # Portfolio
-This is a collection of my projects focused on AI, Data science and analytics.
+This portfolio showcases a collection of my projects centered around artificial intelligence, data science, and analytics.
 
 # Analysis of UK Accident Data
 **Introduction**
